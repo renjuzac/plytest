@@ -12,8 +12,8 @@ def t_error(t):
     print("Illegal character {}".format(t.value[0]))
     t.lexer.skip(1)
 
-tokens = ('WORD','SWORD',
-          'NUMBER','COMMENT')
+tokens = ('WORD',
+          'NUMBER')
 
 lexer = lex.lex()
 type(lexer)
